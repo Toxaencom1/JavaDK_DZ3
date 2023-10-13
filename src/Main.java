@@ -15,12 +15,15 @@ import calculator.Calculator;
 import calculator.outDecorator;
 import compareArrays.CompareArrays;
 
+/**
+ * The `Main` class demonstrates the functionality of the Calculator, CompareArrays, and Pair classes.
+ * This class contains the `main` method and demonstrates the use of these classes and their methods.
+ */
 public class Main {
     public static void main(String[] args) {
         //region Task 1: Calculator
         System.out.println("=Task=№1=Calculator=================");
         try {
-
             double sumResult = Calculator.sum(2, 3L);
             double subtractResult = Calculator.subtract(0.5f, 2L);
             double multiplyResult = Calculator.multiply(2.7, 3L);
@@ -43,22 +46,42 @@ public class Main {
         String[] arr3 = {"apple", "banana", "cherry"};
         Double[] arr4 = {3.0, 2.5, 1.5};
         Integer[] arr5 = {3, 2, 1, 4};
-        Long[] arr6 = {2L,1L,3L};
-        System.out.println("int vs int size = size: "+CompareArrays.compareArrays(arr1, arr2));
-        System.out.println("int vs String: "+CompareArrays.compareArrays(arr1, arr3));
-        System.out.println("int vs double: "+CompareArrays.compareArrays(arr1, arr4));
-        System.out.println("int vs int size != size: "+CompareArrays.compareArrays(arr1, arr5));
-        System.out.println("int vs long: "+CompareArrays.compareArrays(arr1, arr6));
+        Long[] arr6 = {2L, 1L, 3L};
+        System.out.println("int vs int size = size: " + CompareArrays.compareArrays(arr1, arr2));
+        System.out.println("int vs String: " + CompareArrays.compareArrays(arr1, arr3));
+        System.out.println("int vs double: " + CompareArrays.compareArrays(arr1, arr4));
+        System.out.println("int vs int size != size: " + CompareArrays.compareArrays(arr1, arr5));
+        System.out.println("int vs long: " + CompareArrays.compareArrays(arr1, arr6));
         System.out.println("====================================");
-
         //endregion
-        //region Task3: Class Pair
+        //region Task 3: Class Pair
         System.out.println("\n=Task=№3=Class_Pair=================");
-        Pair<Integer,String> pair = new Pair<>(1,"second");
-        Pair<Long,Float> pair2 = new Pair<>(1L,25.4f);
+        Pair<Integer, String> pair = new Pair<>(1, "second");
+        Pair<Long, Float> pair2 = new Pair<>(1L, 25.4f);
+        System.out.println("getFirst() method returns: " + pair.getFirst()
+                + ", Type is: " + pair.getFirst().getClass().getTypeName());
+        System.out.println("getSecond() method returns: " + pair.getSecond()
+                + ", Type is: " + pair.getSecond().getClass().getTypeName());
         System.out.println(pair);
         System.out.println(pair2);
         System.out.println("====================================");
         //endregion
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
