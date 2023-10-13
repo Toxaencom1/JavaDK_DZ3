@@ -80,7 +80,7 @@ public class CompareArrays {
     }
 
 
-    public static  <R>  boolean isCorrect(R[] arr){
+    private static  <R>  boolean isCorrect(R[] arr){
         R temp = arr[0];
         for (int i = 1; i < arr.length ; i++) {
             if (!temp.getClass().getTypeName().equals(arr[i].getClass().getTypeName())) {

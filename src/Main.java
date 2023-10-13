@@ -68,7 +68,6 @@ public class Main {
         System.out.println("int vs int size != size: " + CompareArrays.compareArrays(arr1, arr5));
         System.out.println("int vs long: " + CompareArrays.compareArrays(arr1, arr6));
         System.out.println("Method 2: Obj vs Obj: " + CompareArrays.compareArrays2(objArray, objArray2));
-        System.out.println(CompareArrays.isCorrect(objArray4));
         System.out.println("Method 3: Obj vs Obj: " + CompareArrays.compareArrays3(objArray3, objArray4));
         System.out.println("====================================");
         //endregion
